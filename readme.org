@@ -1,0 +1,45 @@
+#+TITLE:   ideal-walk
+#+DATE:    January 28, 2020
+#+SINCE:   {replace with next tagged release version}
+#+STARTUP: inlineimages nofold
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+  - [[#maintainers][Maintainers]]
+- [[#potential-data][Potential Data]]
+- [[#potential-features][Potential Features]]
+
+* Description
++ Mapping a path with your ideal environment in mind
++ Maximuze air qualtiy
++ Shelter from rain and sun
++ Scenic route
+
+** Maintainers
++ @dkurukula
++ @joeycylee
+
+* Potential Data
++ Strava
++ Google
++ Traffic
++ Air Quality
++ Weather
++ 3D Digital Elevation
+
+* Potential Features
++ Shade map
+  + model with building and trees
+  + incorporate cloud cover
++ Air Quality map
+  + Sensor data
+  + urban climate model
++ Weather map
+  + Rain forecast
++ Indoor routes
++ Traffic map
++ Construction map
++ Pedestrian congestion map
++ Avoid common smoking areas
++ Scenic route
+  + tags on Google, FourSquare, Instagram
