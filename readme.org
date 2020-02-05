@@ -5,9 +5,13 @@
 
 * Table of Contents :TOC_3:noexport:
 - [[#description][Description]]
-  - [[#maintainers][Maintainers]]
 - [[#potential-data][Potential Data]]
 - [[#potential-features][Potential Features]]
+  - [[#other-ideas][Other Ideas]]
+- [[#implementation][Implementation]]
+  - [[#routing][Routing]]
+  - [[#data-sources][Data Sources]]
+- [[#contributers][Contributers]]
 
 * Description
 + Mapping a path with your ideal environment in mind
@@ -15,9 +19,6 @@
 + Shelter from rain and sun
 + Scenic route
 
-** Maintainers
-+ @dkurukula
-+ @joeycylee
 
 * Potential Data
 + Strava
@@ -38,8 +39,32 @@
   + Rain forecast
 + Indoor routes
 + Traffic map
++ Quiet routes
++ Amount of stairs
 + Construction map
 + Pedestrian congestion map
 + Avoid common smoking areas
 + Scenic route
   + tags on Google, FourSquare, Instagram
+  + discovering new walking routes
++ Layers to the City
++ Experiencing the City
+
+** Other Ideas
++ Wayz for walking
+  + real time, store data and find trends
+
+* Implementation
+** Routing 
++ http://project-osrm.org/
+
+** Data Sources
++ https://map.toronto.ca/toinview/
++ http://project-osrm.org/
++ Air Quality Raster Maps
+
+* Contributers
++ @dkurukula
++ @joeycylee
++ Raphael
++ Debbie
