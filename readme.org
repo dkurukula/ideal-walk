@@ -11,19 +11,25 @@
 - [[#implementation][Implementation]]
   - [[#routing][Routing]]
   - [[#data-sources][Data Sources]]
+    - [[#prioritized-data-sources][Prioritized Data Sources]]
+  - [[#routing-1][Routing]]
 - [[#contributers][Contributers]]
 
 * Description
+This project aims to provide you with the ideal walking path in the city. Ideal Walk will enable you to plan your walk with layers of the city that are important to you.
+Google maps assumes you want to optimize for the shortest distance.  However, you may want to avoid areas with construction where there is a lot of noise and air pollution.
+
 + Mapping a path with your ideal environment in mind
 + Maximuze air qualtiy
 + Shelter from rain and sun
 + Scenic route
 
-
 * Potential Data
 + Strava
 + Google
 + Traffic
+    + speed radars
+    + traffic studies
 + Air Quality
 + Weather
 + 3D Digital Elevation
@@ -59,9 +65,19 @@
 + http://project-osrm.org/
 
 ** Data Sources
-+ https://map.toronto.ca/toinview/
-+ http://project-osrm.org/
++ Construction
+  + https://map.toronto.ca/toinview/
+  + https://www.toronto.ca/community-people/get-involved/public-consultations/infrastructure-projects/
+        + Extract information from HTML and PDF
+
++ Traffic
+  + https://open.toronto.ca/dataset/mobile-watch-your-speed-program-detailed-speed-counts/
 + Air Quality Raster Maps
+*** Prioritized Data Sources
+
+** Routing
++ http://project-osrm.org/
+
 
 * Contributers
 + @dkurukula
