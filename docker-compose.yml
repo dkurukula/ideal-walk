@@ -1,0 +1,45 @@
+version: '3'
+services:
+  # App
+  idealwalk:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - postgres
+    volumes:
+      - .:/src
+    environment:
+      - DJANGO_SETTINGS_MODULE=ideal_walk.settings
+      - ENVIRON=local
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - RDS_USERNAME=postgres
+      - RDS_HOSTNAME=postgres
+      - RDS_PASSWORD=postgres
+      - RDS_DB_NAME=idealwalk_db
+    networks:
+      - default
+      - idealwalk
+
+  redis:
+    image: redis:3.0
+    ports:
+      - "6379:6379"
+    networks:
+      - default
+
+  postgres:
+    image: postgres:10.12
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=idealwalk_db
+      - POSTGRES_USER=postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - default
+
+networks:
+  idealwalk:
